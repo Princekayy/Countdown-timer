@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Countdown Timer</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="timer-container">
     <h1>Countdown Timer</h1>
-    <input type="text" id="event-name" placeholder="Event Name">
-    <input type="datetime-local" id="event-date">
-    <button id="start-button">Start Countdown</button>
+    
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" name="event-name" placeholder="Enter the event name">
+
+    <label for="event-date">Event Date:</label>
+    <input type="datetime-local" id="event-date" name="event-date" title="Select the date and time of the event">
+
+    <button id="start-button" aria-label="Start the countdown">Start Countdown</button>
 
     <div class="countdown">
       <h2 id="event-title"></h2>
