@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <div class="timer-container">
+    <h1>Countdown Timer</h1>
+    <input type="text" id="event-name" placeholder="Event Name">
+    <input type="datetime-local" id="event-date">
+    <button id="start-button">Start Countdown</button>
+
+    <div class="countdown">
+      <h2 id="event-title"></h2>
+      <p id="timer">00d : 00h : 00m : 00s</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
